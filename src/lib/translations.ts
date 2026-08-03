@@ -1,5 +1,4 @@
 export type Locale = "pt" | "en";
-export type Theme = "dark" | "light";
 
 export const translations = {
   pt: {
@@ -14,18 +13,29 @@ export const translations = {
       about: "Quem sou",
       contact: "Contato",
       tagline: "Design & Development",
+      cta: "Falar agora →",
+    },
+    hero: {
+      eyebrow: "Design & Development",
+      title: "Produtos digitais",
+      titleItalic: "do conceito ao lançamento",
+      subtitle:
+        "Websites, sistemas e identidades visuais desenvolvidos com foco em resultado — para marcas que querem crescer.",
+      cta: "Ver projetos →",
+      ctaSecondary: "Quem sou",
     },
     scrollCases: {
-      title: "Produtos Digitais",
-      titleLine2: "do Conceito ao Lançamento",
+      label: "Cases selecionados",
+      title: "Projetos recentes",
+      titleItalic: "com impacto real",
       subtitle:
         "Websites, sistemas e produtos digitais desenvolvidos com foco em resultado.",
-      featured: "Case em destaque",
       objective: "Objetivo",
       result: "Resultado",
       viewProject: "Ver projeto completo",
       thumbAlt: "Destaque",
       previewAlt: "Preview do site",
+      moreProjects: "Existem muitos outros projetos…",
     },
     tags: {
       landingPage: "Landing Page",
@@ -53,14 +63,14 @@ export const translations = {
         result:
           "Nova identidade aplicada em toda a interface, com motion design e componentes reutilizáveis no design system.",
       },
-      sitraam: {
-        name: "SitraAM/RR",
+      silvestre: {
+        name: "Silvestre Pet Shop",
         description:
-          "Site institucional do sindicato dos trabalhadores da Justiça do Trabalho da 11ª Região e JF/AM — comunicação, benefícios e filiação em um só lugar.",
+          "Landing page para pet shop com animação de um cachorrinho que corre e interage com o mouse como se fosse uma bolinha — experiência lúdica e memorável.",
         objective:
-          "Fortalecer a presença digital e facilitar o acesso a notícias, serviços e canais oficiais.",
+          "Criar uma LP que comunique serviços e confiança, com motion que divertisse o visitante e reforçasse a identidade da marca.",
         result:
-          "Homepage clara com destaques, CTAs de filiação e grid de benefícios para associados.",
+          "Site publicado com hero interativo, seções de serviços e conversão clara para agendamento no WhatsApp.",
       },
       metas: {
         name: "Metas de Equipe",
@@ -73,7 +83,9 @@ export const translations = {
       },
     },
     services: {
-      title: "O que posso fazer por você",
+      label: "Serviços",
+      title: "O que posso fazer",
+      titleItalic: "por você",
       visualId: {
         title: "Identidade Visual",
         desc: "Marcas com presença, do logotipo ao sistema visual completo.",
@@ -86,10 +98,23 @@ export const translations = {
         title: "UI Design",
         desc: "Interfaces de produto claras, escaláveis e prontas para crescer.",
       },
+      webSystems: {
+        title: "Sistemas web",
+        desc: "Painéis, automações e sistemas sob medida para o dia a dia do seu negócio.",
+      },
+      videoEditing: {
+        title: "Edição de vídeos",
+        desc: "Vídeos claros e com ritmo — para redes, produtos e comunicação de marca.",
+      },
+      automation: {
+        title: "Automação",
+        desc: "Fluxos e integrações que economizam tempo e reduzem trabalho manual no dia a dia.",
+      },
     },
     about: {
       label: "Sobre",
-      title: "Olá, eu sou a Vanessa!",
+      title: "Olá, eu sou a",
+      titleItalic: "Vanessa!",
       p1: "Trabalho com design e desenvolvimento de produtos digitais, ajudando empresas a transformar ideias em experiências que geram resultados.",
       p2: "Crio desde landing pages e websites até sistemas completos e automações, sempre equilibrando estratégia, performance e uma experiência intuitiva para o usuário.",
       p3: "Meu objetivo é construir soluções que não apenas funcionem bem, mas também fortaleçam marcas, simplifiquem processos e impulsionem o crescimento dos negócios.",
@@ -98,9 +123,11 @@ export const translations = {
     marquee: "Vamos fazer um projeto? ",
     contact: {
       label: "Contato",
-      title: "Pronto pra fazer acontecer?",
+      title: "Pronto pra fazer",
+      titleItalic: "acontecer?",
       subtitle:
         "Conte sobre seu projeto e descubra como o design certo pode acelerar seus resultados.",
+      cta: "Falar no WhatsApp →",
       footer: "Feito com cuidado em ☕ + ✦",
     },
     floating: {
@@ -111,8 +138,6 @@ export const translations = {
       photoAlt: "Foto de contato",
     },
     controls: {
-      themeLight: "Tema claro",
-      themeDark: "Tema escuro",
       langPt: "Português",
       langEn: "English",
     },
@@ -129,17 +154,28 @@ export const translations = {
       about: "About",
       contact: "Contact",
       tagline: "Design & Development",
+      cta: "Get in touch →",
+    },
+    hero: {
+      eyebrow: "Design & Development",
+      title: "Digital products",
+      titleItalic: "from concept to launch",
+      subtitle:
+        "Websites, systems, and brand identities built for results — for brands ready to grow.",
+      cta: "See work →",
+      ctaSecondary: "About me",
     },
     scrollCases: {
-      title: "Digital Products",
-      titleLine2: "From Concept to Launch",
+      label: "Selected work",
+      title: "Recent projects",
+      titleItalic: "with real impact",
       subtitle: "Websites, systems, and digital products built for measurable results.",
-      featured: "Featured case",
       objective: "Objective",
       result: "Outcome",
       viewProject: "View full project",
       thumbAlt: "Highlight",
       previewAlt: "Site preview",
+      moreProjects: "There are many other projects…",
     },
     tags: {
       landingPage: "Landing Page",
@@ -167,14 +203,14 @@ export const translations = {
         result:
           "New identity across the interface, with motion design and reusable design system components.",
       },
-      sitraam: {
-        name: "SitraAM/RR",
+      silvestre: {
+        name: "Silvestre Pet Shop",
         description:
-          "Institutional website for the labor union of Court of Labor workers in the 11th Region and Federal Court/AM — communication, benefits, and membership in one place.",
+          "Pet shop landing page with a running dog animation that interacts with the mouse like a ball — playful and memorable.",
         objective:
-          "Strengthen digital presence and improve access to news, services, and official channels.",
+          "Build an LP that communicates services and trust, with motion that delights visitors and reinforces the brand.",
         result:
-          "A clear homepage with highlights, membership CTAs, and a benefits grid for members.",
+          "Live site with an interactive hero, service sections, and clear conversion to WhatsApp booking.",
       },
       metas: {
         name: "Team Goals",
@@ -187,7 +223,9 @@ export const translations = {
       },
     },
     services: {
-      title: "What I can do for you",
+      label: "Services",
+      title: "What I can do",
+      titleItalic: "for you",
       visualId: {
         title: "Brand Identity",
         desc: "Brands with presence — from logo to a complete visual system.",
@@ -200,10 +238,23 @@ export const translations = {
         title: "UI Design",
         desc: "Clear, scalable product interfaces ready to grow.",
       },
+      webSystems: {
+        title: "Web systems",
+        desc: "Dashboards, automations, and custom systems for your day-to-day operations.",
+      },
+      videoEditing: {
+        title: "Video editing",
+        desc: "Clear, paced videos — for social, products, and brand communication.",
+      },
+      automation: {
+        title: "Automation",
+        desc: "Flows and integrations that save time and cut manual work day to day.",
+      },
     },
     about: {
       label: "About",
-      title: "Hi, I'm Vanessa!",
+      title: "Hi, I'm",
+      titleItalic: "Vanessa!",
       p1: "I work with digital product design and development, helping companies turn ideas into experiences that drive results.",
       p2: "From landing pages and websites to full systems and automations, I balance strategy, performance, and intuitive user experience.",
       p3: "My goal is to build solutions that work well while strengthening brands, simplifying processes, and growing businesses.",
@@ -212,8 +263,10 @@ export const translations = {
     marquee: "Let's build something? ",
     contact: {
       label: "Contact",
-      title: "Ready to make it happen?",
+      title: "Ready to make it",
+      titleItalic: "happen?",
       subtitle: "Tell me about your project and how the right design can accelerate your results.",
+      cta: "Chat on WhatsApp →",
       footer: "Made with care in ☕ + ✦",
     },
     floating: {
@@ -224,8 +277,6 @@ export const translations = {
       photoAlt: "Contact photo",
     },
     controls: {
-      themeLight: "Light theme",
-      themeDark: "Dark theme",
       langPt: "Portuguese",
       langEn: "English",
     },

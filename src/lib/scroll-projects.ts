@@ -2,8 +2,7 @@ import type { TranslationDict } from "@/lib/translations";
 import happySeniorImage from "@/assets/happys.png";
 import happySeniorThumb from "@/assets/happy-thumb.png";
 import dataSebraeVideo from "@/assets/0601.webm";
-import sitraamImage from "@/assets/sitraam.png";
-import sitraamThumb from "@/assets/sitraam-thumb.png";
+import silvestreImage from "@/assets/silvestre.png";
 import metasImage from "@/assets/metas.png";
 import metasThumb from "@/assets/metas-thumb.png";
 
@@ -56,24 +55,25 @@ export function getScrollProjects(t: TranslationDict): ScrollProject[] {
       tags: [tag.branding, tag.designSystem, tag.uiDesign, tag.development],
       accent: "#22d3ee",
       siteUrl: "datasebrae.com.br",
-      projectUrl: "https://home-data.netlify.app/",
+      projectUrl: "https://datasebrae.com.br",
       video: dataSebraeVideo,
     },
     {
-      name: p.sitraam.name,
-      description: p.sitraam.description,
-      objective: p.sitraam.objective,
-      result: p.sitraam.result,
+      name: p.silvestre.name,
+      description: p.silvestre.description,
+      objective: p.silvestre.objective,
+      result: p.silvestre.result,
       tags: [tag.landingPage, tag.uiDesign, tag.development],
-      accent: "#e85d3b",
-      siteUrl: "sitraam.org.br",
-      projectUrl: "https://www.sitraam.org.br/",
-      preview: sitraamImage,
-      previewThumb: sitraamThumb,
-      previewThumbWidth: 900,
-      previewThumbHeight: 792,
-      previewWidth: 2808,
-      previewHeight: 2474,
+      accent: "#7c3aed",
+      siteUrl: "silvestre-petshop.vercel.app",
+      projectUrl: "https://silvestre-petshop.vercel.app/",
+      preview: silvestreImage,
+      previewThumb: silvestreImage,
+      previewThumbWidth: 889,
+      previewThumbHeight: 1024,
+      previewWidth: 889,
+      previewHeight: 1024,
+      deckThumbPosition: "top",
     },
     {
       name: p.metas.name,
