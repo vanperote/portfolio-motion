@@ -52,7 +52,7 @@ function FloatImg({
           draggable={false}
           className={cn(
             "h-auto w-full drop-shadow-md",
-            blend && "mix-blend-multiply",
+            blend && "float-blend",
           )}
         />
       </div>

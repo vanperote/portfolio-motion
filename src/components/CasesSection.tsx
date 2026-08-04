@@ -57,7 +57,7 @@ export function CasesSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.7, ease: EASE, delay: i * 0.06 }}
-                className="group relative grid rounded-[1.5rem] bg-white pb-28 shadow-[0_10px_30px_rgba(20,20,15,0.05)] ring-1 ring-black/5 md:grid-cols-[minmax(220px,38%)_1fr] md:pb-10"
+                className="group relative grid rounded-[1.5rem] bg-surface pb-32 shadow-[var(--card-shadow)] ring-1 ring-line md:grid-cols-[minmax(220px,38%)_1fr] md:pb-14"
               >
                 <div className="relative aspect-[16/10] overflow-hidden rounded-t-[1.5rem] bg-panel md:aspect-auto md:min-h-[200px] md:rounded-l-[1.5rem] md:rounded-tr-none">
                   {p.video ? (
@@ -85,7 +85,7 @@ export function CasesSection() {
                   )}
                 </div>
 
-                <div className="relative z-10 flex flex-col justify-center p-5 sm:p-6 md:p-7 md:pr-40">
+                <div className="relative z-10 flex flex-col justify-center p-5 sm:p-6 md:p-7 md:pr-48 lg:pr-52">
                   <div className="flex flex-wrap items-start justify-between gap-3">
                     <h3 className="font-serif text-xl font-bold leading-snug text-ink sm:text-2xl">
                       {p.name}
@@ -94,14 +94,14 @@ export function CasesSection() {
                       href={p.projectUrl ?? "#contact"}
                       target={p.projectUrl ? "_blank" : undefined}
                       rel={p.projectUrl ? "noopener noreferrer" : undefined}
-                      className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-lime px-3.5 py-2 text-xs font-bold text-ink transition hover:brightness-95 sm:text-sm"
+                      className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-lime px-3.5 py-2 text-xs font-bold text-[#1c1c1a] transition hover:brightness-95 sm:text-sm"
                     >
                       {labels.viewProject}
                       <ArrowUpRight className="size-3.5" />
                     </a>
                   </div>
 
-                  <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-grayink">
+                  <p className="mt-2 text-sm leading-relaxed text-grayink">
                     {p.description}
                   </p>
 
@@ -110,7 +110,7 @@ export function CasesSection() {
                       <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-grayink-2">
                         {labels.objective}
                       </div>
-                      <p className="mt-0.5 line-clamp-2 text-sm leading-snug text-ink/80">
+                      <p className="mt-0.5 text-sm leading-snug text-ink/80">
                         {p.objective}
                       </p>
                     </div>
@@ -118,7 +118,7 @@ export function CasesSection() {
                       <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-grayink-2">
                         {labels.result}
                       </div>
-                      <p className="mt-0.5 line-clamp-2 text-sm leading-snug text-ink/80">
+                      <p className="mt-0.5 text-sm leading-snug text-ink/80">
                         {p.result}
                       </p>
                     </div>
@@ -128,7 +128,7 @@ export function CasesSection() {
                     {p.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="rounded-full border border-black/10 bg-cream px-2.5 py-0.5 text-[11px] font-medium text-ink"
+                        className="rounded-full border border-line bg-cream px-2.5 py-0.5 text-[11px] font-medium text-ink"
                       >
                         {tag}
                       </span>
@@ -145,8 +145,8 @@ export function CasesSection() {
                   height={367}
                   loading="lazy"
                   decoding="async"
-                  className={`pointer-events-none absolute -bottom-8 left-1/2 z-20 w-36 -translate-x-1/2 select-none sm:left-auto sm:right-3 sm:w-44 sm:translate-x-0${
-                    float.blend ? " mix-blend-multiply" : ""
+                  className={`pointer-events-none absolute -bottom-10 left-1/2 z-20 w-36 -translate-x-1/2 select-none sm:left-auto sm:-right-4 sm:w-44 sm:translate-x-0 md:-right-6 md:-bottom-12${
+                    float.blend ? " float-blend" : ""
                   }`}
                 />
               </motion.article>

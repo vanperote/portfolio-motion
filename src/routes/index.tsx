@@ -56,11 +56,11 @@ function Header() {
   const { t } = useSitePreferences();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-black/5 bg-cream/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-line bg-cream/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-5 py-3">
         <a href="#" className="flex items-center gap-2">
           <div className="grid size-7 place-items-center rounded-md bg-lime">
-            <Sparkles className="size-4 text-ink" strokeWidth={2.5} />
+            <Sparkles className="size-4 text-[#1c1c1a]" strokeWidth={2.5} />
           </div>
           <div className="flex flex-col leading-tight">
             <span className="text-sm font-bold tracking-tight text-ink">VanCode</span>
@@ -86,7 +86,7 @@ function Header() {
           <SiteControls />
           <a
             href="#contact"
-            className="rounded-full bg-lime px-4 py-2 text-sm font-bold text-ink transition hover:brightness-95 sm:px-5 sm:py-2.5"
+            className="rounded-full bg-lime px-4 py-2 text-sm font-bold text-[#1c1c1a] transition hover:brightness-95 sm:px-5 sm:py-2.5"
           >
             {t.nav.cta}
           </a>
@@ -108,7 +108,7 @@ function Hero() {
           initial={{ opacity: 0, y: reduce ? 0 : 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, ease: EASE }}
-          className="inline-flex items-center rounded-full border border-black/15 px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink"
+          className="inline-flex items-center rounded-full border border-line px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink"
         >
           {t.hero.eyebrow}
         </motion.span>
@@ -141,13 +141,13 @@ function Hero() {
         >
           <a
             href="#cases"
-            className="rounded-full bg-lime px-6 py-3 text-sm font-bold text-ink transition hover:brightness-95"
+            className="rounded-full bg-lime px-6 py-3 text-sm font-bold text-[#1c1c1a] transition hover:brightness-95"
           >
             {t.hero.cta}
           </a>
           <a
             href="#about"
-            className="rounded-full border border-black/15 bg-white/60 px-6 py-3 text-sm font-semibold text-ink transition hover:border-black/25 hover:bg-white"
+            className="rounded-full border border-line bg-surface/70 px-6 py-3 text-sm font-semibold text-ink transition hover:border-line hover:bg-surface"
           >
             {t.hero.ctaSecondary}
           </a>
@@ -222,7 +222,7 @@ function Services() {
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.8, ease: EASE, delay: i * 0.08 }}
               whileHover={{ y: -4 }}
-              className="flex flex-col gap-3 rounded-2xl bg-white p-6 shadow-[0_10px_30px_rgba(20,20,15,0.05)] sm:p-8"
+              className="flex flex-col gap-3 rounded-2xl bg-surface p-6 shadow-[var(--card-shadow)] sm:p-8"
             >
               <div
                 className={`flex size-11 shrink-0 items-center justify-center rounded-full ${it.pill}`}
@@ -267,7 +267,7 @@ function About() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: EASE }}
-          className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem] bg-panel shadow-[0_24px_70px_rgba(20,20,15,0.08)] ring-1 ring-black/5"
+          className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-[2rem] bg-panel shadow-[var(--card-shadow)] ring-1 ring-line"
         >
           <img
             src={aboutVanessa}
@@ -290,7 +290,7 @@ function Marquee() {
     <div
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className="overflow-hidden border-y border-black/8 bg-panel py-5 md:py-7"
+      className="overflow-hidden border-y border-line bg-panel py-5 md:py-7"
     >
       <motion.div
         className="flex whitespace-nowrap"
@@ -334,7 +334,7 @@ function Contact() {
             href={WHATSAPP}
             target="_blank"
             rel="noreferrer"
-            className="mt-8 inline-flex rounded-full bg-lime px-7 py-3.5 text-sm font-bold text-ink transition hover:brightness-95"
+            className="mt-8 inline-flex rounded-full bg-lime px-7 py-3.5 text-sm font-bold text-[#1c1c1a] transition hover:brightness-95"
           >
             {t.contact.cta}
           </a>

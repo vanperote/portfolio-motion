@@ -16,7 +16,7 @@ export function FloatingContactCard() {
       className="fixed z-[60] bottom-3 sm:bottom-5 left-1/2 -translate-x-1/2"
     >
       <div
-        className="group relative flex items-center gap-2.5 sm:gap-3 rounded-2xl sm:rounded-[24px] border border-black/10 bg-white/95 backdrop-blur-xl px-3 py-2.5 sm:px-4 sm:py-3 shadow-[0_16px_50px_-12px_rgba(20,20,15,0.18)] transition-all duration-500"
+        className="group relative flex items-center gap-2.5 sm:gap-3 rounded-2xl sm:rounded-[24px] border border-line bg-surface/95 backdrop-blur-xl px-3 py-2.5 sm:px-4 sm:py-3 shadow-[var(--card-shadow)] transition-all duration-500"
         style={{ minHeight: "64px" }}
       >
         <div className="relative shrink-0">
@@ -45,7 +45,7 @@ export function FloatingContactCard() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.96 }}
           transition={{ type: "spring", stiffness: 380, damping: 22 }}
-          className="relative inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full bg-lime px-2.5 py-1.5 text-[11px] font-bold text-ink transition hover:brightness-95 sm:px-3.5 sm:py-2 sm:text-xs"
+          className="relative inline-flex shrink-0 cursor-pointer items-center gap-1.5 rounded-full bg-lime px-2.5 py-1.5 text-[11px] font-bold text-[#1c1c1a] transition hover:brightness-95 sm:px-3.5 sm:py-2 sm:text-xs"
         >
           <span className="grid size-4 place-items-center rounded-full bg-[#25D366]/15 text-[#25D366]">
             <MessageCircle className="size-3" strokeWidth={2.5} />

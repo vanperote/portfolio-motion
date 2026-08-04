@@ -140,6 +140,8 @@ export const translations = {
     controls: {
       langPt: "Português",
       langEn: "English",
+      themeLight: "Tema claro",
+      themeDark: "Tema escuro",
     },
   },
   en: {
@@ -279,6 +281,8 @@ export const translations = {
     controls: {
       langPt: "Portuguese",
       langEn: "English",
+      themeLight: "Light theme",
+      themeDark: "Dark theme",
     },
   },
 } as const;
