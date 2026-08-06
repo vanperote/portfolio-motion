@@ -6,6 +6,33 @@ import silvestreImage from "@/assets/silvestre.png";
 import metasImage from "@/assets/metas.png";
 import metasThumb from "@/assets/metas-thumb.png";
 
+/** Siglas das versões estaduais do DataSebrae */
+export const DATASEBRAE_STATES = [
+  "AL",
+  "AM",
+  "AP",
+  "BA",
+  "ES",
+  "GO",
+  "MA",
+  "MG",
+  "MS",
+  "MT",
+  "PA",
+  "PB",
+  "PE",
+  "PI",
+  "PR",
+  "RJ",
+  "RN",
+  "RO",
+  "RS",
+  "SC",
+  "SE",
+  "SP",
+  "TO",
+] as const;
+
 export type ScrollProject = {
   name: string;
   description: string;
@@ -24,6 +51,9 @@ export type ScrollProject = {
   previewThumb2x?: string;
   deckThumbPosition?: "top" | "left-top";
   video?: string;
+  /** Siglas com link https://datasebrae.com.br/{sigla} */
+  stateCodes?: readonly string[];
+  statesLabel?: string;
 };
 
 export function getScrollProjects(t: TranslationDict): ScrollProject[] {
@@ -52,11 +82,13 @@ export function getScrollProjects(t: TranslationDict): ScrollProject[] {
       description: p.dataSebrae.description,
       objective: p.dataSebrae.objective,
       result: p.dataSebrae.result,
-      tags: [tag.branding, tag.designSystem, tag.uiDesign, tag.development],
+      tags: [tag.ux, tag.uiDesign, tag.designSystem, tag.development],
       accent: "#22d3ee",
       siteUrl: "datasebrae.com.br",
       projectUrl: "https://datasebrae.com.br",
       video: dataSebraeVideo,
+      stateCodes: DATASEBRAE_STATES,
+      statesLabel: p.dataSebrae.statesLabel,
     },
     {
       name: p.silvestre.name,

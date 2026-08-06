@@ -45,6 +45,7 @@ export const translations = {
       designSystem: "Design System",
       dashboard: "Dashboard",
       visualId: "Id. Visual",
+      ux: "UX Research",
     },
     projects: {
       happySenior: {
@@ -57,11 +58,12 @@ export const translations = {
       dataSebrae: {
         name: "DataSebrae",
         description:
-          "Redesign da página do DataSebrae com animações, interações e a criação de um novo design system e identidade visual.",
+          "Redesign da home e das versões estaduais do DataSebrae — nova experiência visual, navegação mais clara e páginas sob medida para cada UF, mantendo a linguagem da plataforma e o acesso ao ambiente de negócios da região.",
         objective:
-          "Renovar a experiência digital da marca com uma linguagem visual consistente e interações que reforçam o propósito do produto.",
+          "Modernizar a home e as páginas estaduais com UX e UI consistentes, facilitando o acesso ao conteúdo regional.",
         result:
-          "Nova identidade aplicada em toda a interface, com motion design e componentes reutilizáveis no design system.",
+          "Home e versões estaduais redesenhadas e publicadas em datasebrae.com.br e datasebrae.com.br/{UF}.",
+        statesLabel: "Acesse as versões estaduais",
       },
       silvestre: {
         name: "Silvestre Pet Shop",
@@ -187,6 +189,7 @@ export const translations = {
       designSystem: "Design System",
       dashboard: "Dashboard",
       visualId: "Brand Identity",
+      ux: "UX Research",
     },
     projects: {
       happySenior: {
@@ -199,11 +202,12 @@ export const translations = {
       dataSebrae: {
         name: "DataSebrae",
         description:
-          "DataSebrae page redesign with animations, interactions, and a new design system and visual identity.",
+          "Redesign of DataSebrae’s home and state versions — a clearer visual experience and navigation, with tailored pages for each Brazilian state, aligned with the platform’s language and access to the regional business environment.",
         objective:
-          "Refresh the brand's digital experience with a consistent visual language and purposeful interactions.",
+          "Modernize the home and state pages with consistent UX and UI, making regional content easier to find.",
         result:
-          "New identity across the interface, with motion design and reusable design system components.",
+          "Home and state versions redesigned and live at datasebrae.com.br and datasebrae.com.br/{UF}.",
+        statesLabel: "Browse state versions",
       },
       silvestre: {
         name: "Silvestre Pet Shop",

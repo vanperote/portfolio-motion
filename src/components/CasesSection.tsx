@@ -68,7 +68,7 @@ export function CasesSection() {
                       muted
                       playsInline
                       preload="metadata"
-                      className="absolute inset-0 size-full object-cover object-top"
+                      className="absolute inset-0 size-full object-cover object-left"
                     />
                   ) : (
                     <img
@@ -134,6 +134,27 @@ export function CasesSection() {
                       </span>
                     ))}
                   </div>
+
+                  {p.stateCodes && p.stateCodes.length > 0 && (
+                    <div className="mt-5">
+                      <div className="text-[10px] font-bold uppercase tracking-[0.16em] text-grayink-2">
+                        {p.statesLabel}
+                      </div>
+                      <div className="mt-2 flex flex-wrap gap-1.5">
+                        {p.stateCodes.map((uf) => (
+                          <a
+                            key={uf}
+                            href={`https://datasebrae.com.br/${uf.toLowerCase()}`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex min-w-9 items-center justify-center rounded-full border border-line bg-cream px-2.5 py-1 text-[11px] font-semibold text-ink transition hover:border-olive hover:bg-green-soft hover:text-olive"
+                          >
+                            {uf}
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Same classes/sizes as Salto "Os 3 Mitos" floats */}
