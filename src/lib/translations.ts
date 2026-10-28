@@ -3,12 +3,13 @@ export type Locale = "pt" | "en";
 export const translations = {
   pt: {
     meta: {
-      title: "VanCode — Design & Development",
+      title: "VanCode · Design & Development",
       description:
         "Portfólio de design de produto: identidade visual, websites e UI para SaaS e startups.",
     },
     nav: {
       cases: "Cases",
+      motion: "Motion",
       services: "Serviços",
       about: "Quem sou",
       contact: "Contato",
@@ -20,7 +21,7 @@ export const translations = {
       title: "Produtos digitais",
       titleItalic: "do conceito ao lançamento",
       subtitle:
-        "Websites, sistemas e identidades visuais desenvolvidos com foco em resultado — para marcas que querem crescer.",
+        "Websites, sistemas e identidades visuais desenvolvidos com foco em resultado, para marcas que querem crescer.",
       cta: "Ver projetos →",
       ctaSecondary: "Quem sou",
     },
@@ -35,7 +36,33 @@ export const translations = {
       viewProject: "Ver projeto completo",
       thumbAlt: "Destaque",
       previewAlt: "Preview do site",
+      expandVideo: "Ver vídeo em tamanho real",
+      closeVideo: "Fechar vídeo",
       moreProjects: "Existem muitos outros projetos…",
+    },
+    motion: {
+      label: "Motion",
+      title: "DataSebrae no telão",
+      titleItalic: "da FE26",
+      subtitle:
+        "Filme criado para o stand da Feira do Empreendedor, na São Paulo Expo, de 19 a 22 de outubro.",
+      event: "Feira do Empreendedor FE26",
+      venue: "São Paulo Expo",
+      dates: "19 a 22 de outubro",
+      duration: "20 segundos",
+      adTitle: "O anúncio",
+      adCaption: "Filme 16:9 criado para o telão, com som e QR code para a plataforma.",
+      play: "Assistir com som",
+      fairTitle: "No stand",
+      fairCaption: "Registro da exibição ao vivo no telão do stand.",
+      description:
+        "Conceito, edição e motion do filme de apresentação do DataSebrae, pensado para leitura à distância no telão da feira.",
+      objectiveLabel: "Objetivo",
+      objective:
+        "Apresentar a plataforma em poucos segundos e levar o visitante do stand até o DataSebrae pelo QR code.",
+      resultLabel: "Resultado",
+      result:
+        "Anúncio em loop no telão durante os quatro dias do evento, com registro da exibição no stand.",
     },
     tags: {
       landingPage: "Landing Page",
@@ -46,6 +73,8 @@ export const translations = {
       dashboard: "Dashboard",
       visualId: "Id. Visual",
       ux: "UX Research",
+      videoEditing: "Edição de vídeo",
+      motion: "Motion",
     },
     projects: {
       happySenior: {
@@ -58,7 +87,7 @@ export const translations = {
       dataSebrae: {
         name: "DataSebrae",
         description:
-          "Redesign da home e das versões estaduais do DataSebrae — nova experiência visual, navegação mais clara e páginas sob medida para cada UF, mantendo a linguagem da plataforma e o acesso ao ambiente de negócios da região.",
+          "Redesign da home e das versões estaduais do DataSebrae: nova experiência visual, navegação mais clara e páginas sob medida para cada UF, mantendo a linguagem da plataforma e o acesso ao ambiente de negócios da região.",
         objective:
           "Modernizar a home e as páginas estaduais com UX e UI consistentes, facilitando o acesso ao conteúdo regional.",
         result:
@@ -68,7 +97,7 @@ export const translations = {
       silvestre: {
         name: "Silvestre Pet Shop",
         description:
-          "Landing page para pet shop com animação de um cachorrinho que corre e interage com o mouse como se fosse uma bolinha — experiência lúdica e memorável.",
+          "Landing page para pet shop com animação de um cachorrinho que corre e interage com o mouse como se fosse uma bolinha, numa experiência lúdica e memorável.",
         objective:
           "Criar uma LP que comunique serviços e confiança, com motion que divertisse o visitante e reforçasse a identidade da marca.",
         result:
@@ -94,7 +123,7 @@ export const translations = {
       },
       websites: {
         title: "Websites",
-        desc: "Sites que convertem — landing pages, institucionais e produtos.",
+        desc: "Sites que convertem: landing pages, institucionais e produtos.",
       },
       ui: {
         title: "UI Design",
@@ -106,7 +135,7 @@ export const translations = {
       },
       videoEditing: {
         title: "Edição de vídeos",
-        desc: "Vídeos claros e com ritmo — para redes, produtos e comunicação de marca.",
+        desc: "Vídeos claros e com ritmo, para redes, produtos e comunicação de marca.",
       },
       automation: {
         title: "Automação",
@@ -148,12 +177,13 @@ export const translations = {
   },
   en: {
     meta: {
-      title: "VanCode — Design & Development",
+      title: "VanCode · Design & Development",
       description:
         "Product design portfolio: brand identity, websites, and UI for SaaS and startups.",
     },
     nav: {
       cases: "Work",
+      motion: "Motion",
       services: "Services",
       about: "About",
       contact: "Contact",
@@ -165,7 +195,7 @@ export const translations = {
       title: "Digital products",
       titleItalic: "from concept to launch",
       subtitle:
-        "Websites, systems, and brand identities built for results — for brands ready to grow.",
+        "Websites, systems, and brand identities built for results, for brands ready to grow.",
       cta: "See work →",
       ctaSecondary: "About me",
     },
@@ -179,7 +209,33 @@ export const translations = {
       viewProject: "View full project",
       thumbAlt: "Highlight",
       previewAlt: "Site preview",
+      expandVideo: "View video at full size",
+      closeVideo: "Close video",
       moreProjects: "There are many other projects…",
+    },
+    motion: {
+      label: "Motion",
+      title: "DataSebrae on the",
+      titleItalic: "FE26 screen",
+      subtitle:
+        "A film made for the stand at the Entrepreneur Fair, São Paulo Expo, from October 19 to 22.",
+      event: "Entrepreneur Fair FE26",
+      venue: "São Paulo Expo",
+      dates: "October 19 to 22",
+      duration: "20 seconds",
+      adTitle: "The ad",
+      adCaption: "16:9 film created for the LED wall, with sound and a QR code to the platform.",
+      play: "Watch with sound",
+      fairTitle: "At the stand",
+      fairCaption: "Live recording of the film playing on the stand’s screen.",
+      description:
+        "Concept, edit, and motion for DataSebrae’s presentation film, designed to read from a distance on the fair’s LED wall.",
+      objectiveLabel: "Objective",
+      objective:
+        "Introduce the platform in a few seconds and take stand visitors to DataSebrae via QR code.",
+      resultLabel: "Outcome",
+      result:
+        "Ad looping on the screen throughout the four-day event, with on-site footage of the stand.",
     },
     tags: {
       landingPage: "Landing Page",
@@ -190,6 +246,8 @@ export const translations = {
       dashboard: "Dashboard",
       visualId: "Brand Identity",
       ux: "UX Research",
+      videoEditing: "Video editing",
+      motion: "Motion",
     },
     projects: {
       happySenior: {
@@ -202,7 +260,7 @@ export const translations = {
       dataSebrae: {
         name: "DataSebrae",
         description:
-          "Redesign of DataSebrae’s home and state versions — a clearer visual experience and navigation, with tailored pages for each Brazilian state, aligned with the platform’s language and access to the regional business environment.",
+          "Redesign of DataSebrae’s home and state versions: a clearer visual experience and navigation, with tailored pages for each Brazilian state, aligned with the platform’s language and access to the regional business environment.",
         objective:
           "Modernize the home and state pages with consistent UX and UI, making regional content easier to find.",
         result:
@@ -212,7 +270,7 @@ export const translations = {
       silvestre: {
         name: "Silvestre Pet Shop",
         description:
-          "Pet shop landing page with a running dog animation that interacts with the mouse like a ball — playful and memorable.",
+          "Pet shop landing page with a running dog animation that interacts with the mouse like a ball, playful and memorable.",
         objective:
           "Build an LP that communicates services and trust, with motion that delights visitors and reinforces the brand.",
         result:
@@ -234,11 +292,11 @@ export const translations = {
       titleItalic: "for you",
       visualId: {
         title: "Brand Identity",
-        desc: "Brands with presence — from logo to a complete visual system.",
+        desc: "Brands with presence, from logo to a complete visual system.",
       },
       websites: {
         title: "Websites",
-        desc: "Sites that convert — landing pages, institutional sites, and products.",
+        desc: "Sites that convert: landing pages, institutional sites, and products.",
       },
       ui: {
         title: "UI Design",
@@ -250,7 +308,7 @@ export const translations = {
       },
       videoEditing: {
         title: "Video editing",
-        desc: "Clear, paced videos — for social, products, and brand communication.",
+        desc: "Clear, paced videos for social, products, and brand communication.",
       },
       automation: {
         title: "Automation",

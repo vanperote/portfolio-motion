@@ -2,7 +2,7 @@ import type { TranslationDict } from "@/lib/translations";
 import happySeniorImage from "@/assets/happys.png";
 import happySeniorThumb from "@/assets/happy-thumb.png";
 import dataSebraeVideo from "@/assets/0601.webm";
-import silvestreImage from "@/assets/silvestre.png";
+import silvestreVideo from "@/assets/f6lKk96k2eGW1Jo.mp4";
 import metasImage from "@/assets/metas.png";
 import metasThumb from "@/assets/metas-thumb.png";
 
@@ -51,6 +51,8 @@ export type ScrollProject = {
   previewThumb2x?: string;
   deckThumbPosition?: "top" | "left-top";
   video?: string;
+  videoWidth?: number;
+  videoHeight?: number;
   /** Siglas com link https://datasebrae.com.br/{sigla} */
   stateCodes?: readonly string[];
   statesLabel?: string;
@@ -72,8 +74,8 @@ export function getScrollProjects(t: TranslationDict): ScrollProject[] {
       projectUrl: "https://www.happysenior.com.br/",
       preview: happySeniorImage,
       previewThumb: happySeniorThumb,
-      previewThumbWidth: 900,
-      previewThumbHeight: 578,
+      previewThumbWidth: 3200,
+      previewThumbHeight: 2052,
       previewWidth: 2700,
       previewHeight: 1732,
     },
@@ -87,6 +89,8 @@ export function getScrollProjects(t: TranslationDict): ScrollProject[] {
       siteUrl: "datasebrae.com.br",
       projectUrl: "https://datasebrae.com.br",
       video: dataSebraeVideo,
+      videoWidth: 1578,
+      videoHeight: 1080,
       stateCodes: DATASEBRAE_STATES,
       statesLabel: p.dataSebrae.statesLabel,
     },
@@ -99,13 +103,9 @@ export function getScrollProjects(t: TranslationDict): ScrollProject[] {
       accent: "#7c3aed",
       siteUrl: "silvestre-petshop.vercel.app",
       projectUrl: "https://silvestre-petshop.vercel.app/",
-      preview: silvestreImage,
-      previewThumb: silvestreImage,
-      previewThumbWidth: 889,
-      previewThumbHeight: 1024,
-      previewWidth: 889,
-      previewHeight: 1024,
-      deckThumbPosition: "top",
+      video: silvestreVideo,
+      videoWidth: 1420,
+      videoHeight: 806,
     },
     {
       name: p.metas.name,
@@ -118,8 +118,8 @@ export function getScrollProjects(t: TranslationDict): ScrollProject[] {
       projectUrl: "https://metas.datasebrae.com.br/",
       preview: metasImage,
       previewThumb: metasThumb,
-      previewThumbWidth: 900,
-      previewThumbHeight: 474,
+      previewThumbWidth: 1500,
+      previewThumbHeight: 789,
       deckThumbPosition: "left-top",
       previewWidth: 2824,
       previewHeight: 1488,

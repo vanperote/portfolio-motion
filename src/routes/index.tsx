@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Sparkles, Palette, Layout, Monitor, AppWindow, Clapperboard, Workflow } from "lucide-react";
 import { FloatingContactCard } from "@/components/FloatingContactCard";
 import { CasesSection } from "@/components/CasesSection";
+import { Fe26Section } from "@/components/Fe26Section";
 import { SiteControls } from "@/components/SiteControls";
 import { HeroFloats, SectionFloats } from "@/components/FloatingDecor";
 import { useSitePreferences } from "@/lib/site-preferences";
@@ -12,13 +13,13 @@ import aboutVanessa from "@/assets/about-vanessa.png";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "VanCode — Design & Development" },
+      { title: "VanCode · Design & Development" },
       {
         name: "description",
         content:
           "Portfólio de design de produto: identidade visual, websites e UI para SaaS e startups.",
       },
-      { property: "og:title", content: "VanCode — Design & Development" },
+      { property: "og:title", content: "VanCode · Design & Development" },
       {
         property: "og:description",
         content:
@@ -73,6 +74,9 @@ function Header() {
         <nav className="hidden items-center gap-6 md:flex">
           <a href="#cases" className="text-sm font-medium text-ink transition hover:text-olive">
             {t.nav.cases}
+          </a>
+          <a href="#motion" className="text-sm font-medium text-ink transition hover:text-olive">
+            {t.nav.motion}
           </a>
           <a href="#services" className="text-sm font-medium text-ink transition hover:text-olive">
             {t.nav.services}
@@ -357,6 +361,7 @@ function Index() {
       <main>
         <Hero />
         <CasesSection />
+        <Fe26Section />
         <Marquee />
         <Services />
         <About />

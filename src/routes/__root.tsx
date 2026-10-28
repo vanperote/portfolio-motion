@@ -73,10 +73,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "VanCode — Design & Development" },
+      { title: "VanCode · Design & Development" },
       { name: "description", content: "Portfólio de design de produto: identidade visual, websites e UI para SaaS e startups." },
       { name: "author", content: "VanCode" },
-      { property: "og:title", content: "VanCode — Design & Development" },
+      { property: "og:title", content: "VanCode · Design & Development" },
       { property: "og:description", content: "Portfólio de design de produto: identidade visual, websites e UI para SaaS e startups." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
